@@ -1,0 +1,82 @@
+.Body_layout {
+    margin: 0;
+    height: 100vh;
+    background: rgb(1, 255, 1);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* grid-template-rows: 10% 50%; */
+    
+    color: red;
+    font-size: 2rem;
+    font-family: ;
+
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25% 50% 25%;
+    font-size: 60%;
+    
+
+}
+.about_me, .skills, .projects {
+ border: 1px solid red;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+
+}
+
+.about_me_btn, .skills_btn, .projects_btn {
+    background-color: black;
+    width: 50%;
+    height: 55%;
+    border-radius: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.skills {
+ border: 1px solid red;
+}
+
+.projects {
+ border: 1px solid red;
+}
+
+.color {
+    color: white;
+    border: 1px solid red;
+    
+}
+
+.Who_Am_I {
+    display: grid;
+    height:100%;
+    grid-template-rows: 15% 60% 25%;
+
+}
+
+.Text_about_me {
+    background-color: white;
+    color: black;
+    font-size: 65%;
+}
+
+.text_layout {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+
+}
+
+.am {
+    background-color: black;
+    display: flex;
+
+
+}
+
