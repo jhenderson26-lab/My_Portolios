@@ -19,6 +19,10 @@
     
 }
 
+
+.left-side_homescreen {
+    margin-left: 8%;
+}
 .controls {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -30,7 +34,7 @@
 .about_me, .skills, .projects {
     border: 1px solid red;
     display: flex;
-    justify-content: center;
+    justify-content:left;
     align-items: center;
     
 
@@ -69,31 +73,40 @@
 
 }
 
+.my_name {
+    font-size: larger;
+}
+
 .Text_about_me {
     background-color: white;
     color: black;
     font-size: 65%;
     border-radius: 12px;
     border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
 }
 
 .text_layout {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto 20%;
+    grid-template-columns:  60% 30%;
+    grid-template-rows: auto;
 }
 
 .space {
     padding-left: 5%;
 }
 
+.text {
+    line-height: 25px;
+}
 
 .white_back {
     background-color: white;
     border: 3px solid black;
     border-radius: 12px;
     width: 60%;
-    height: 50%;
+    height: 80%;
     color: black;
 }
 
