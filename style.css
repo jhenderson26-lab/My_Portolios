@@ -1,31 +1,38 @@
+.all, .Body_layout {
+    margin: 0%;
+    height: 100%;
+    overflow: hidden;
+} 
+
 .Body_layout {
     margin: 0;
     height: 100vh;
-    background: rgb(1, 255, 1);
+    /* background: rgb(1, 255, 1); */
     display: grid;
     grid-template-columns: 60% 40%;
-    /* grid-template-rows: 10% 50%; */
+    grid-template-rows: 75% 25%;
     
     color: red;
     font-size: 2rem;
-    font-family: ;
-
+    font-family: Arial, sans-serif;
+    background-image: -webkit-linear-gradient( -20deg, white 0%, white 55%, black 0%, black 60%);
+    
 }
 
 .controls {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 25% 50% 25%;
-    font-size: 60%;
-    
+    font-size: 1.5vw;
+    font-weight: bold;
 
 }
 .about_me, .skills, .projects {
- border: 1px solid red;
- display: flex;
- justify-content: center;
- align-items: center;
- 
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
@@ -36,7 +43,8 @@
     border-radius: 30px;
     padding-left: 12px;
     padding-right: 12px;
-    padding-top: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
     text-align: center;
 }
 
@@ -57,7 +65,7 @@
 .Who_Am_I {
     display: grid;
     height:100%;
-    grid-template-rows: 15% 60% 25%;
+    /* grid-template-rows: 15% 60% 25%; */
 
 }
 
@@ -65,18 +73,35 @@
     background-color: white;
     color: black;
     font-size: 65%;
+    border-radius: 12px;
+    border: 2px solid black;
 }
 
 .text_layout {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-
+    grid-template-rows: auto 20%;
 }
 
-.am {
-    background-color: black;
-    display: flex;
+.space {
+    padding-left: 5%;
+}
 
+
+.white_back {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 60%;
+    height: 50%;
+    color: black;
+}
+
+.middle-ground_cender {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
 
 }
 
