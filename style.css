@@ -92,11 +92,13 @@
     font-size: 18px;
     line-height: 150%;  
     margin-bottom: 5%;
+    margin-left: 10px;
 }
 
 
 .smaller {
     font-size: 100%;
+    margin-left: 10px;
 }
 
 
@@ -300,6 +302,7 @@
 }
 .text_box_r {
     color: white;
+    padding: 10px;
 }
 
 .skills_body {
@@ -590,6 +593,7 @@
     padding: auto 10px;
     height: 200px;
     background: white;
+    padding: 0px 10px;
 }
 
 .button_to_project {
