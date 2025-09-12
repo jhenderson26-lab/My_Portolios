@@ -2,25 +2,36 @@
     margin: 0%;
     height: 100%;
     overflow: hidden;
-} 
+}
+
 
 .Body {
     margin: 0;
     height: 100vh;
-    color: red;
+    color: rgb(2, 2, 2);
     font-size: 2rem;
     font-family: Arial, sans-serif;
-    background-image: -webkit-linear-gradient( -20deg, white 0%, white 55%, black 0%, black 60%);
+
     
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: -webkit-linear-gradient( -20deg, white 0%, white 50%, black 0%, black 60%);
+   
 }
+
 
 .main_layout {
     display: grid;
     width: 100%;
     height: 80%;
-    grid-template-columns: 5% 58% 37%;
+    grid-template-columns: 5% 55% 40%;
    
 }
+
+
+
 
 
 
@@ -29,46 +40,127 @@
     grid-template-columns: 100%;
     grid-template-rows: 5% 5% 15% auto;
     height: 100%;
-    
+   
+
 
 }
+
+
+.controls {
+    background-color: black;
+    border: none;
+    outline: 5px solid white;
+    color: white;
+    border-radius: 25px;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight:700;
+}
+
+
+
 
 .top_button_layout {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: 250px 250px 250px;
+    margin-right: 50px;
     justify-content: space-between;
-
 }
+
 
 .full {
     width: 100%;
     height: 100%;
 }
 
+
 .text_box {
     border: 3px solid black;
-    width: 80%;
+    width: 70%;
     height: fit-content;
+    
     border-radius: 12px;
 }
 
+
 .text {
-    font-size: large;
-    line-height: 150%;
-    
+    font-size: 18px;
+    line-height: 150%;  
+    margin-bottom: 5%;
 }
+
+
+.smaller {
+    font-size: 100%;
+}
+
+
+.my_name {
+    font-size: 130%;
+}
+
 
 .button_botton {
     display: grid;
     height: 20%;
     width: 100%;
-    grid-template-columns:  20vw 20vw 20vw 20vw;
+    grid-template-columns:  15% 15% 15% 15% ;
     grid-template-rows: 100%;
     justify-content: end;
-    background-image: url("images/holder.png");
-    background-size: cover;
-    /* background-color: green; */
+   
 }
+
+
+.pic_box_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.picter {
+    
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+
+.pic_me {
+    width: 90%;
+    height: 90%;
+}
+
+
+.back {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+    box-sizing:border-box ;
+    clip-path: polygon(24% 0, 100% 0%, 79% 100%, 0% 100%);
+
+
+}
+
+
+.button_botton .f {
+    background: black;
+    clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+
 
 .button_container_img {
     display: flex;
@@ -80,6 +172,7 @@
     justify-content: end;
 }
 
+
 .fixing {
     display: flex;
     height: 100%;
@@ -88,22 +181,283 @@
 
 
 
+
+
+
 .c, .d, .e, .f {
     display: flex;
     height: 100%;
     width: 100%;
 
-    justify-content: center;
-    align-content: center;
 
-    
+    justify-content: center;
+    align-items: center;
+
+
+   
 }
 
+.Github, .Indeed, .email {
+    display: flex;
+    height: 95%;
+    width: 98%;
+    justify-items: center;
+    justify-items: center;
+    clip-path: polygon(24% 0, 100% 0%, 79% 100%, 0% 100%);
+}
+
+.resume {
+    display: flex;
+    height: 95%;
+    width: 98%;
+    justify-items: center;
+    justify-items: center;
+    clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0% 100%);
+    
+}
 
 
 .color {
-    color: green;
+    color: black;
     border: 1px solid red;
+   
+}
+
+@media screen  and (max-width:  600px){
+    .Body {
+        background-image: -webkit-linear-gradient(295deg, white, white 50%, black 0, black 60%);
+    }
+    .smaller {
+        font-size: 80%;
+        margin: 10px;
+    }
+
+    .text {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .text_box {
+        justify-self: center;
+        align-self: center;
+        background: white;
+    }
+    .controls {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+
+    .top_button_layout {
+        grid-template-columns: 50px 50px 50px;
+        justify-content: space-around;
+    }
+
+    .main_layout {
+        grid-template-columns: none;
+    }
+
+    .button_botton {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .email, .resume {
+        background: white;
+        clip-path: (0 0, 70% 0, 100% 100%, 26% 100%);
+    }
+
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+.color {
+    border: 1px solid red ;
+}
+
+.skills_html  {
+    margin: 0%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    font-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: -webkit-linear-gradient(164deg, white, white 50%, black 0%, black 60%)
+
+}
+.text_box_r {
+    color: white;
+}
+
+.skills_body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+.L-txt_R-pics {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.logo_boxes {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 70%;
     
 }
 
+.black_round_border {
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.row_one, .row_two, .row_three, .row_four, .row_five {
+    margin: 2%;
+    justify-items: center;
+    gap: 10%;
+    
+}
+
+
+.row_one {
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* justify-items: center;
+    align-content: center; */
+
+}
+
+.python_logo {
+    width: 40%;
+    
+}
+
+.row_two {
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+     
+}
+
+.sql_logo{
+    width: 50%;
+}
+.html_logo {
+    height: 80%;
+    width: 40%;
+}
+
+.row_three {
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+
+.React_logo {
+    width: 70%;
+    
+}
+
+.Js_logo {
+    width: 40%;
+}
+
+.row_four {
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.Java_logo {
+    width: 90%;
+    
+}
+
+.django_logo {
+    width: 90%;
+}
+
+.css_logo {
+    width: 100%;
+}
+
+.row_five {
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.SolidWorks_logo {
+    width: 100%;
+}
+
+.Godot_logo {
+    width: 70%;
+}
+
+.Spring_logo {
+    width: 60%;
+}
+
+
+.py_box, .row_2_logo, .row_three_logo, .row_four_logo, .row_five_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle_center {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+ .text_box_r {
+    width: 60%;
+    height: 70%;
+    border: 4px solid white;
+    border-radius: 15px;
+ }
+
+
+.skills_buttons {
+    display: grid;
+    grid-template-columns: 10% 200px 200px 200px auto;
+}
+
+.skills_controls {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button_mj {
+    background-color: white;
+    border: none;
+    outline: black;
+    color: black;
+    border-radius: 25px;
+    padding: 12px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-weight:700;
+}
