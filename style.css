@@ -500,3 +500,119 @@
         font-size: 15px;
     }
 }
+
+
+
+.projects_main {
+
+
+    display: grid;
+    grid-template-rows: 10% 5% 80% 5%;
+}
+
+
+.color {
+    border: 1px solid red;
+}
+
+
+.Projects_title {
+    margin-left: 3%;
+}
+
+.my_project_boxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.box_1, .box_2, .box_3 {
+    display: grid;
+    height: 100%;
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    grid-template-rows: 225px 50px 225px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.half_n_half {
+    border-style: solid;
+    border-color: black white white black; 
+}
+
+.mj_box {
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.Wrap_up_pic {
+    display: flex;
+    justify-self: center;
+    margin-top: 5%;
+}
+
+.Wrap_up_logo, .GOAT_logo, .PS_logo {
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+    
+}
+
+.title {
+    justify-self: center;
+    background-color: black;
+    border: none;
+    outline: 3px solid white;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    /* cursor: pointer; */
+    font-weight: 700;
+    height: 20px;
+    width: 180px;
+}
+
+
+.about_box {
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    border: 3px solid black;
+    width: 250px;
+    padding: auto 10px;
+    height: 200px;
+    background: white;
+}
+
+.button_to_project {
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.mj_title {
+    outline: 3px solid black;
+    background: white;
+    color: black;
+}
+
+.bigger_title {
+    width: 180px;
+}
+
+.top_button_layout_projects {
+    display: grid;
+    grid-template-columns: auto auto 70%;
+}
+
+.off_set {
+    margin-left: 10%;
+}
