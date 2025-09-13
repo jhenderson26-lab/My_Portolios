@@ -3,11 +3,11 @@
     height: 100%;
     overflow: hidden;
 }
-
+ 
 
 .Body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     color: rgb(2, 2, 2);
     font-size: 2rem;
     font-family: Arial, sans-serif;
@@ -273,6 +273,9 @@
     }
 
 
+    .all, .Body {
+        overflow: none;
+    }
 
 
 }
@@ -303,6 +306,8 @@
 .text_box_r {
     color: white;
     padding: 10px;
+    background: black;
+    font-family: Arial, sans-serif;
 }
 
 .skills_body {
@@ -473,7 +478,7 @@
 }
 
 
-
+/* ------------------------------------------------------ */
 @media screen and (max-width:500px) {
     .skills_body {
         display: grid;
@@ -495,13 +500,18 @@
     align-items: center;
     }
     
-
+    .skills_html {
+        overflow:scroll;
+    }
 
     .button_mj {
         
         padding: 10px 20px;
         font-size: 15px;
     }
+
+
+   
 }
 
 
@@ -510,7 +520,7 @@
 
 
     display: grid;
-    grid-template-rows: 10% 5% 80% 5%;
+    grid-template-rows: 10% 5% 80% 0%;
 }
 
 
@@ -521,10 +531,12 @@
 
 .Projects_title {
     margin-left: 3%;
+    
 }
 
 .my_project_boxes {
     display: grid;
+    padding: 5%;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
 }
@@ -615,8 +627,32 @@
 .top_button_layout_projects {
     display: grid;
     grid-template-columns: auto auto 70%;
+    align-self:end;
 }
 
 .off_set {
     margin-left: 10%;
+}
+
+.Project_html {
+    overflow: none;
+}
+
+@media screen and (max-width:500px) {
+    .top_button_layout_projects {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 3%;
+    }
+
+    .my_project_boxes {
+        display: grid;
+       grid-template-columns: none; 
+    }
+
+    .Project_html {
+        overflow:scroll;
+    }
 }
